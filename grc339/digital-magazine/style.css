@@ -59,8 +59,8 @@ margin-bottom: .2em;
 }
 
 nav ul li a {
-color: rgb(90, 113, 139);
-font-family: sans-serif;
+color: rgb(255, 51,54);
+font-family: 'Lucida Sans Regular', sans-serif;
 font-weight: 600;
 }
 
@@ -69,8 +69,9 @@ color: #f00;
 }
 
 /*text*/
+
 p{
-font-family: sans-serif;
+font-family: 'Lucida Grande', sans-serif;
 font-weight:400;
 margin: 0em 0.2em 2em 0.2em;
 }
@@ -87,12 +88,13 @@ margin-bottom: 1em;
 }
 
 h2{
-font-family: serif;
-color: rgb(92, 120, 151);
-font-weight: 600;
+font-family: "silicone", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: rgb(255, 51,54);
 margin-left: .1em;
 margin-top: .1em;
-font-size: 2em;
+font-size: 1.5em;
 }
 
 section.mainstory h2{
@@ -101,7 +103,7 @@ font-size: 3em;
 
 section.tertiarystory h2{
 font-size: 1.2em;
-border-top: 1px solid #000; 
+border-top: 1px solid rgb(160, 223, 243);
 padding-top: .5em;
 }
 
@@ -122,8 +124,9 @@ section.tertiary-story p{
 line-height: 1em;
 }
 figcaption{
+font-family: "silicone", sans-serif;
+font-weight: 400;
 font-style: italic;
-font-family: sans-serif;
 margin-top: .5em;
 margin-bottom: 1em;
 margin-left: .3em;
@@ -131,7 +134,7 @@ color: rgb(96, 96, 96);
 }
 
 aside{
-background-color: rgb(204, 208, 251);
+background-color: rgb(160, 223, 243);
 padding: 1.5em .5em;
 }
 
@@ -204,8 +207,8 @@ margin-bottom: 0em;
 /*footer*/
 footer{
 width: 100%;
-background-color: rgb(92, 120, 151);
-color: rgb(255, 255, 255);
+background-color: rgb(207,207,57);
+color:  rgb(0, 0, 0);
 padding: 0.5em;
 box-sizing: border-box;
 }
