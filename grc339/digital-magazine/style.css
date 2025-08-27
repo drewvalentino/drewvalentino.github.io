@@ -33,6 +33,9 @@ padding: 0 1em;
 display:grid;
 grid-template-columns: 3fr 1fr;
 grid-gap: 1em;} 
+  figcaption {
+    margin: .2em .4em 1em 0em;
+  }
 }
 
 div.container {
@@ -60,8 +63,9 @@ margin-bottom: .2em;
 
 nav ul li a {
 color: rgb(255, 51,54);
-font-family: 'Lucida Sans Regular', sans-serif;
-font-weight: 600;
+font-family: "silicone", sans-serif;
+font-weight: 700;
+font-style: normal;
 }
 
 nav ul li a:hover{
@@ -69,10 +73,10 @@ color: #f00;
 }
 
 /*text*/
-
 p{
-font-family: 'Lucida Grande', sans-serif;
-font-weight:400;
+font-family: "arponasans", sans-serif;
+font-weight: 400;
+font-style: normal;
 margin: 0em 0.2em 2em 0.2em;
 }
 
@@ -123,8 +127,9 @@ margin-bottom: .3em;
 section.tertiary-story p{
 line-height: 1em;
 }
+
 figcaption{
-font-family: "silicone", sans-serif;
+font-family: "arponasans", sans-serif;
 font-weight: 400;
 font-style: italic;
 margin-top: .5em;
@@ -138,6 +143,151 @@ background-color: rgb(160, 223, 243);
 padding: 1.5em .5em;
 }
 
+/*photo gallery*/
+div.gallery-container {
+    max-width: 70em;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+div.gallery main h2 {
+    margin: 1em 0em 1em 1em;
+    color: rgb(255, 51,54);
+}
+
+div.gallery article {
+    position: relative;
+    overflow: hidden; 
+    padding-bottom: calc(85% + 3em);
+    margin-left: 1em;
+}
+
+div.gallery figure {
+    margin: 0;
+    width: calc(100%-2em);
+    position: absolute; 
+    opacity: 0; 
+    transition: .5s; 
+}
+
+div.gallery img {
+    width: 100%;
+}
+
+div.gallery figcaption {
+    font-family: "arponasans", sans-serif;
+   font-weight: 400;
+   font-style: italic;
+    color: rgb(41, 41, 41);
+    margin: .2em .4em 0;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8){
+    opacity: 1; 
+}
+
+div.gallery nav {
+    display: grid; 
+    grid-template-columns: repeat(8, 1fr); 
+    grid-gap: .2em;
+    margin-left: 0;
+}
+
+div.gallery input {
+    display: none;
+}
+
+/*form*/
+h3 {
+    font-family: "arponasans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 1.5em 0 .5em 0;
+}
+
+h4 {
+  font-family: "arponasans", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+   margin-bottom: .5em;
+}
+
+form {
+    background-color: rgb(255, 255, 255);
+    padding: .5em;
+    margin-bottom: 1.5em;
+}
+
+div.newsletter-container {
+    max-width: 70em;
+    margin: 0 auto;
+    padding: .5em;
+}
+
+section.personal-info h2 {
+    margin-top: .5em;
+}
+
+section.personal-info ul {
+    list-style-type: none;
+    font-family: "arponasans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.personal-info ul li{
+    flex: 1 0 10em;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+section.personal-info ul li label {
+    flex: 0 0 4em;
+}
+
+section.personal-info ul li input[type="text"],
+section.personal-info ul li input[type="email"],
+section ul li select {
+    flex: 4em 1em 15em;
+    box-sizing: border-box;
+}
+
+section.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    list-style-type: none;
+    font-family: "arponasans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.contact ul li {
+    flex: 0 0 6em;
+    padding-right: 1em;
+}
+
+button {
+   font-family: "silicone", sans-serif;
+   font-weight: 700;
+   font-style: normal;
+    color: rgb(255, 51,54);
+    border-style: none;
+    width: 7em;
+    height: 2.2em;
+}
+
+div.subscription img {
+    width: 15em;
+}
 /*main*/
 
 section.mainstory {
@@ -205,15 +355,19 @@ margin-bottom: 0em;
 }
 
 /*footer*/
-footer{
-width: 100%;
-background-color: rgb(207,207,57);
-color:  rgb(0, 0, 0);
-padding: 0.5em;
-box-sizing: border-box;
+footer {
+    border-top: solid 2px  rgb(207,207,57);
+    padding: .6em;
+    box-sizing: border-box;
 }
+
+footer p {
+    color:  rgb(207,207,57);
+    font-family: "silicone", sans-serif;
+font-weight: 700;
+font-style: normal;
+} 
 
 header, footer {
 grid-column: 1/3;
 }
-
